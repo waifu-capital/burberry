@@ -69,6 +69,7 @@ impl<T: Debug + Send + Sync> Executor<T> for EchoExecutor<T> {
     }
 }
 
+#[allow(clippy::large_enum_variant)]
 #[derive(Debug, Clone)]
 enum Event {
     Block(Header),
